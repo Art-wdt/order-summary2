@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    
+
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vw; */
+    background: url(../images/pattern-background-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: rgb(224, 232, 255);
+
+}
+
+.container {
+    max-width: 450px;
+    
+
+}
+
+.img {
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.content {
+    margin-top: -5px;
+    background-color: #fff;
+    padding: 0 45px;
+    border-radius: 0 0 20px 20px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    color: var(--darkBlue);
+}
+
+.paragraph {
+    color: var(--desaturatedBlue);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--veryPaleBlue); 
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.music-icon {
+    width: 50px;
+    height: 100%;
+}
+
+.change-link:hover {
+text-decoration: none;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--brightBlue);
+    box-shadow: 0 4px 8px 0 rgba(41, 45, 245, 0.322);
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(245, 83%, 68%);
+}
+
+.link-cancel {
+    display: block;
+    text-align: center;
+    margin: 15px auto 0 auto;
+    padding-bottom: 30px;
+    text-decoration: none;
+    color: var(--desaturatedBlue);
+    font-weight: 700;
+}
+
+.link-cancel:hover {
+    color: var(--darkBlue);
+}
+
+.price p {
+    color: var(--desaturatedBlue);
+}
+
